@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <style>
+    body {
+        margin: 0;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .hover-bordr-btn:hover{
+        color: #0d6efd;
+        border-color: #0d6efd;
+        background-color: #fff;
+    }
+    .mx-auto{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .py-3{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .primary-title{
+      font-size: 3.5rem;
+      font-weight:400 ;
+      margin: 0;
+    }
+    .header-section{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        max-width: 880px;
+        margin: 3rem auto;
+    }
+    .title-description{
+      color: #6c757d;
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 0;
+      text-align: center;
+    }
+    .d-flex{
+      display: flex;
+    }
+    .card-wrap{
+      gap: 2rem;
+    }
+    .card-wrap .col{
+      flex: 1 1 0px;
+    }
+    .card-header {
+        padding: .5rem 1rem;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, .03);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+    }
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
+    }
+    .card h4{
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+      margin: 0;
+    }
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .card-body h2{
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .card-body h2 small{
+      font-size: 0.875em;
+      font-weight: 300;
+    }
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15sease-in-out, background-color .15sease-in-out, border-color .15sease-in-out, box-shadow .15sease-in-out;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+    .card-body .btn{
+      width: 100%;
+    }
+    
+
+    @media (max-width: 1200px) {
+        .container {
+            max-width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        h4 {
+            font-size: calc(1.275rem + .3vw) !important;
+        }
+        h2 {
+            font-size: calc(1.375rem + 1.5vw) !important;
+        }
+        h1 {
+            font-size: calc(1.875rem + 1.5vw) !important;
+        }
+    }
+    @media (max-width: 768px) {
+        .card-wrap {
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+    @media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        }
+    }    
+    
+  </style>
+</head>
+<body>
+    <div class="container mx-auto py-3">
+        <header>
+            <div class="header-section">                
+                        <h1 class="primary-title mb-3">Pricing</h1>
+                        <p class="title-description">Vivamus sed sapien vel est ornare pharetra in a leo. Vivamus interdum
+                            tristique magna, sed lobortis purus efficitur ac. Sed ligula lectus, fringilla tempus arcu. Quickly build an effective pricing table for your potential customers with this Bootstrap example.</p>
+            </div>  
+        </header>
+      
+        <main>
+          <div class="d-flex card-wrap">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header">
+                  <h4 class="my-0 fw-normal">Lease for 72 months</h4>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title pricing-card-title">$199<small class="text-muted fw-light">/mo</small></h2>
+                  <p>model:</p>
+                  <button type="button" class="w-100 btn btn-lg btn-primary hover-bordr-btn">View Inventory</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Lease for 48 months</h4>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$219<small class="text-muted fw-light">/mo</small></h2>
+                    <p>model:</p>
+                    <button type="button" class="w-100 btn btn-lg btn-primary hover-bordr-btn">View Specials</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Lease for 32 months</h4>
+                  </div>
+                  <div class="card-body">
+                    <h2 class="card-title pricing-card-title">$299<small class="text-muted fw-light">/mo</small></h2>
+                    <p>model:</p>
+                    <button type="button" class="w-100 btn btn-lg btn-primary hover-bordr-btn">Get pre-approved</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+      
+        </main>
+      
+       
+      </div>
+
+    
+</body>
+</html>
